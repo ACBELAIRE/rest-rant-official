@@ -10,3 +10,9 @@ h1 {
   max-height: 400px;
 }
 
+.row img {
+  width: auto;
+  max-width: 300px;
+  height: auto;
+  max-height: 400px;
+}
