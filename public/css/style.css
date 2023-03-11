@@ -3,13 +3,10 @@ h1 {
     color: cornflowerblue;
   }
   
-.col-sm-6 img {
-  width: auto;
-  max-width: 300px;
-  height: auto;
-  max-height: 400px;
+h2 {
+  text-align: center;
+  color: lightblue;
 }
-
 .row img {
   width: auto;
   max-width: 300px;

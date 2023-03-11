@@ -5,23 +5,26 @@ function show (data) {
     return (
         <Def>
           <main>
-            <div className='flexbox'>
-
-                <div className='image'>
-                  <img src= {data.place.pic} alt={data.place.name} />
-                  <h3> Located in {data.place.city}, {data.place.state}</h3>
+            <div className='row'>
+                <div className='col-sm-6'>
+                <br></br>
+                  <img src= {data.place.pic} alt={data.place.name} width='375' height="375"/>
                 </div>
-
+       
+              <div className='col-sm-6'>
                 <div className='description'>
-                  <h1>{data.place.name}</h1>
+                <br></br>
+                <br></br>
+                <h1>{data.place.name}</h1>
                   <h2>Rating</h2>
                   <p>Currently unrated</p>
 
                   <h2>Description</h2>
-                  <h3>Description Here </h3>
+                  <h3> Located in {data.place.city}, {data.place.state}</h3>
+                  <h3>{data.place.showEstablished} </h3>
 
-                  <h3> Serving {data.place.cuisines}</h3>
-
+                  <h4> Serving Up  {data.place.cuisines}</h4>
+                
                   <div className='buttons'>
                     <a href={`/places/${data.id}/edit`} className='btn btn-warning'>
                       Edit
@@ -31,17 +34,15 @@ function show (data) {
                               Delete
                           </button>
                       </form> 
+                      </div>
+              </div>
                   </div>
                </div>
-              
+              <hr></hr>
               <div className='comments'>
                 <h2>Comments</h2>
-                <p> comments here</p>
+                <p> No Comments Here Yet!</p>
             </div>
-          </div>
-     
-
-
           </main>
         </Def>
     )
