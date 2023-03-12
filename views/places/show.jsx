@@ -14,6 +14,7 @@ function show (data) {
               <div className='col-sm-6'>
                 <div className='description'>
                 <br></br>
+       
                 <br></br>
                 <h1>{data.place.name}</h1>
                   <h2>Rating</h2>
@@ -27,7 +28,7 @@ function show (data) {
                 
                   <div className='buttons'>
                     <a href={`/places/${data.id}/edit`} className='btn btn-warning'>
-                      Edit
+                      Edit<i class="bi bi-pencil-square"></i>
                   </a>
                       <form  method="POST" action={`/places/${data.id}?_method=DELETE`}> 
                           <button type="submit" className="btn btn-danger">
