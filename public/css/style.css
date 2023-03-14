@@ -50,3 +50,16 @@ main {
   margin-left: 20px;
   background-color: white;
 }
+
+.Comment-Form {
+  background-color: lightblue;
+  width: 700px;
+  margin:auto;
+}
+
+.cbox{
+  margin-top: 20px;
+  width: 33.3%;
+  border-top: solid 1px;
+  border-color: lightgray;
+}

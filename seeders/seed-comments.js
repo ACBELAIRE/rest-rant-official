@@ -2,7 +2,7 @@ const db = require('../controllers/models')
 
 // To use await, we need an async function.
 async function seed() {
-    // Get the place, H-Thai-ML
+    // Get the place, Mega-Bytes
     let place = await db.Place.findOne({ name: 'Mega-Bytes' })
 
     // Create a fake sample comment.

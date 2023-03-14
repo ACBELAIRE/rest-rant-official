@@ -46,21 +46,60 @@ function show (data) {
                   <div className='buttons'>
                     <a href={`/places/${data.id}/edit`} className='btn btn-warning'>
                       Edit<i class="bi bi-pencil-square"></i>
-                  </a>
+                    </a>
                       <form  method="POST" action={`/places/${data.id}?_method=DELETE`}> 
                           <button type="submit" className="btn btn-danger">
                               Delete
                           </button>
                       </form> 
-                      </div>
+                    </div>
+                </div>
               </div>
-                  </div>
-               </div>
-              <hr></hr>
+            </div>
+            
               <div className='comments'>
                 <h2>Comments</h2>
+                <div className='cbox'>
                 {comments}
-            </div>
+                </div>
+              </div>
+
+
+              <h2> Got Your Own Rant or Rave?</h2>
+              <form className='Comment-Form' method="POST" action={`/places/${data.place.id}/comment`}>
+                    <div class='row'>
+                      <div class="col-sm">
+                      <div className='form-group'>
+                           <label htmlFor="author">Author</label>
+                           <input className='form-control' type="text" id="author" name="author"  required/>
+                      </div>
+                      </div>
+
+                      <div class="col-sm">
+                        <div className='form-group'>
+                       <label htmlFor="rate">Rating</label>
+                       <br></br>
+                            <input  type="range" id="stars" name="stars" min="1" max="5" step=".5" required/>
+                        </div>
+                        </div>
+
+                        <div class="col-sm">
+                        <div className='form-group'>
+                        <label htmlFor="rant">Is This A Rant?</label>
+                        <br></br>
+                           <input type="checkbox" id="rant" name="rant"  />
+                      </div>
+                    </div>
+                  </div>
+
+                      <div className='form-group'>
+                        <label htmlFor="content">Content</label>
+                            <textarea className='form-control' id="content" name="content"  required/>
+                      </div>
+
+                       <input className='btn btn-primary' type="submit" value="Add Comment" />
+
+                    </form>
           </main>
         </Def>
     )
