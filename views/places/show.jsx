@@ -23,7 +23,7 @@ function show (data) {
       }
       rating = (
         <h3>
-          {Math.round(averageRating)} stars
+          {stars} stars
         </h3>
       )
 
