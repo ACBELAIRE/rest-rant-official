@@ -57,3 +57,22 @@ main {
   margin:auto;
 }
 
+.cbox{
+  margin-left: 5%;
+  max-height: 45vh;
+  max-width: 90%;
+  background-color: white;
+  border: 1px solid lightblue;
+  overflow-y:scroll;
+}
+
+.buttons{
+  margin-top: 7px;
+  width: 100%;
+  text-align: center;
+}
+
+.buttons *{
+  margin-left: 5px;
+  display: inline-block;
+}
